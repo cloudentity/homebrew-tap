@@ -5,20 +5,20 @@
 class Oauth2c < Formula
   desc "CLI for OAuth2"
   homepage "https://github.com/cloudentity/oauth2c"
-  version "1.17.1"
+  version "1.17.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Darwin_x86_64.tar.gz"
-      sha256 "3a6c307bd15e85465b72a2dd455857213a6bd890e7de924f765602684a66a087"
+      url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.2/oauth2c_1.17.2_Darwin_x86_64.tar.gz"
+      sha256 "cefcfac21a249d05819642f890e7cd302aede653e638acfa7103322553582807"
 
       def install
         bin.install "oauth2c"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Darwin_arm64.tar.gz"
-      sha256 "c79ffa2d85b5f7dcfe9cba5d07e82ee57af98d6256eafd024d93f616b3f28385"
+      url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.2/oauth2c_1.17.2_Darwin_arm64.tar.gz"
+      sha256 "d27de99eca06fc1c9bb38ea44ba5dd26de2411c5d7a3e1ff9230c7ec9f351368"
 
       def install
         bin.install "oauth2c"
@@ -29,8 +29,8 @@ class Oauth2c < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Linux_x86_64.tar.gz"
-        sha256 "48db71025a7164f9ba52cae3719c88143c08dae85b47c68d9cd78ff1f895843a"
+        url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.2/oauth2c_1.17.2_Linux_x86_64.tar.gz"
+        sha256 "c9646502efd690b05244e978ab49665693fe5d6ae1d253e1510a7fe3f8f34d5c"
 
         def install
           bin.install "oauth2c"
@@ -39,8 +39,8 @@ class Oauth2c < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Linux_arm.tar.gz"
-        sha256 "4587a3c512a0cdc8b61313f2c0eac142d4295d7cf366e63ac90c3383014c2221"
+        url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.2/oauth2c_1.17.2_Linux_arm.tar.gz"
+        sha256 "e13bf3a196d6df2d277fb6c948566d8a1c6b5177090e6097ac796bf93d38e2f2"
 
         def install
           bin.install "oauth2c"
@@ -49,8 +49,8 @@ class Oauth2c < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Linux_arm64.tar.gz"
-        sha256 "a6ed727cd38988ea05d56e73c5590b13c9af8d631245a9e553c60c5497ecda8b"
+        url "https://github.com/cloudentity/oauth2c/releases/download/v1.17.2/oauth2c_1.17.2_Linux_arm64.tar.gz"
+        sha256 "b10c8a24c5ded1b11ca402abb7a8584bf766127226bd73207d6c61db15fbac40"
 
         def install
           bin.install "oauth2c"
